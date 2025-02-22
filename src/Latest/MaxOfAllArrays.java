@@ -18,15 +18,13 @@ public class MaxOfAllArrays {
         int tempNum = 0;
         List<Integer> maxOfAllElements = new ArrayList<>();
 
-        for (int rp = 0; rp < arr.length + 1; rp++) {
-
+        for (int rp = 0; rp <= arr.length; rp++) {
             if (rp >= lp + k) {
-                System.out.println("lp: " + lp + k + ", rp: " + rp );
                 rp = lp;
                 lp ++;
                 maxOfAllElements.add(tempNum);
                 tempNum = 0;
-            } else {
+            } else if(rp < arr.length){
                 tempNum = Math.max(tempNum, arr[rp]);
             }
 

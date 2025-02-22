@@ -9,7 +9,6 @@ public class Task {
     }
 
     public static int sum(int[] numArr, int k) {
-        System.out.println("Worked...");
         if (numArr == null || numArr.length < k) {
             return -1;
         }
