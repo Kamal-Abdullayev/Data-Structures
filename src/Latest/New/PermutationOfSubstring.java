@@ -2,7 +2,6 @@ package Latest.New;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 public class PermutationOfSubstring {
     public static void main(String[] args) {
@@ -23,8 +22,6 @@ public class PermutationOfSubstring {
             patMap.put(tempChar, patMap.getOrDefault(tempChar, 0) + 1);
         }
 
-
-
         for (int rp = 0; rp < textChars.length; rp++) {
             char rightChar = textChars[rp];
             map.put(rightChar, map.getOrDefault(rightChar, 0) + 1);
@@ -38,8 +35,6 @@ public class PermutationOfSubstring {
                 lp++;
             }
         }
-
-
         return isPermutation;
     }
 }
